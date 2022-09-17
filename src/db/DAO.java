@@ -11,8 +11,8 @@ public class DAO {
 		public void connect() throws ClassNotFoundException, SQLException
 		{
 				Class.forName("com.mysql.jdbc.Driver");//loading driver
-				url="jdbc:mysql://localhost:3306/test";
-			    con=DriverManager.getConnection(url, "root", "cloud");//creating connection
+				url="jdbc:mysql://localhost:3306/dbName";
+			    con=DriverManager.getConnection(url, "db_username", "db_password");//creating connection
 		}
 		public void insert(Manager m) throws SQLException, ClassNotFoundException
 		{
